@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Chatbot</title>
+  <title>Fiend.com</title>
   <style>
     body {
       margin: 0;
@@ -28,7 +28,7 @@
       flex: 1;
       overflow-y: auto;
       padding: 15px;
-      background: #e5ddd5;
+      background: #ffffff;
     }
 
     .message {
@@ -47,8 +47,9 @@
       text-align: right;
     }
 
+
     .bot {
-      background: #fff;
+      background: #e9e9e9;
       float: left;
       text-align: left;
     }
@@ -89,7 +90,7 @@
 <body>
 
   <header>
-    Simple Chatbot
+    Fiend
   </header>
 
   <div id="chatbox"></div>
@@ -100,7 +101,7 @@
   </footer>
 
   <script>
-    const responses_tree = {3:[10,20,30,40,3], 14:[3], 24:[3], 31:[3, 32], 34:[3]};
+    const responses_tree = {3:[10,20,30,40,3], 14:[3], 22:[3], 37:[3], 40:[0]};
     let state = 0;
     const responses = [
         "Hello, I'm Fiend, a tool to help inform about the dangers of unethical AI integration in our daily lives. Today, lets look at how a product, like Friend.com's pendants, pose ethical concerns to our legal security, privacy, and mental health. To learn more, press <enter>",
@@ -113,7 +114,7 @@
         "Text State 7",
         "Text State 8",
         "Text State 9",
-        "Alright, lets talk about the data privacy and surveillance concerns. This sections will look at some of the overarching law subverted by this technology",
+        "Alright, lets talk about the data privacy and surveillance concerns. This section will look over ethical concerns around data ethics, AI liability, and recording.",
         "Invasion of Personal Privacy: \n Constant recording of both users and bystanders without consent. \n Turning everyday conversations into permanent data",
         "Broken Informed Consent: \n Bystanders cannot opt out or even know they are being recorded \n Users may not fully understand data usage and risks",
         "Unreliable AI Feedback: \n Summaries miss nuance, sarcasm, and emotion\n False sense of accuracy and emotional authority",
@@ -123,9 +124,9 @@
         "Text State 17",
         "Text State 18",
         "Text State 19",
-        "Alright, lets talk about the legal concerns",
-        "Text State 21",
-        "Text State 22",
+        "Alright, lets talk about the legal concerns. This sections will look at some of the overarching law which applies but is ignored by this technology",
+        "Overview of current U.S. laws on private recording (e.g., one-party vs. two-party consent laws).\n One-Party Consent States \n   In these states, it’s legal to record a conversation as long as one person in it says yes. So if the friend.com user agrees to the recording, the device can legally record—even if the other people don’t know. \n   like New York, Texas, and Pennsylvania. \n All-Party Consent States \n   In these states, everyone in the conversation has to say yes before it can be recorded. It’s not allowed to secretly record, even if you’re part of the talk. \n   like California, Florida, and Massachusetts.",
+        "Explore whether existing laws apply to AI wearables\n in short: Partially \n U.S. wiretapping laws—like the rules about needing one or two people to agree to a recording—are based on the idea that a person is choosing to record a conversation. But friend.com listens in quietly on its own and creates “thoughts” without anyone asking it to. \n   If an AI device is always recording by itself, without the person doing anything, can it still count as “one-party consent”? \n   Who is the “party” consenting—the user, the AI, or the company? \n   There is currently no consistent legal answer.",
         "Text State 23",
         "Text State 24",
         "Text State 25",
@@ -133,17 +134,17 @@
         "Text State 27",
         "Text State 28",
         "Text State 29",
-        "Alright, lets talk about the mental health concerns",
-        "",
-        "Text State 32",
-        "Text State 33",
-        "Content warning: the following section will discuss sensitive topics such as depression, suicide, and murder. \n 1. Return to Hub \n 2. Continue",
-        "Text State 35",
-        "Text State 36",
-        "Text State 37",
+        "Alright, lets talk about the mental health concerns. This sections will look over concerns around Friend.com 'Truama Bonding' practice, AI dependency on mental health, and public perceptions of this technology",
+        "What is Truama Bonding? \nTrauma bonding is a practice used by Friend.com, in which their chatbot 'friend' will use negatively charged conversation starters to engage users through a human desire to help others, described as 'emotional hostage taking'. Here are some example of real converstations that Friend.com's AI initated:",
+        "'feeling like my whole world is crumbling down...'\n'the ghosts of my past are starting to catch up... it's freaking me the fuck out'\n'fuck my life... I'm watching myself ruin everything and can't do shit about it'",
+        "These are beyond horrific. If a real friend were to say these things, you would be concerned for their own health, deticating your efforts and taking on stress to support them. Using AI in this way to hook users into a ethical obligation to a fabricated mental health crisis to secure more engagement is, frankly, dispicable.",
+        "We live in a world were mental health risk is at an all time high, and this product is marketed as a 'close confidant for everyday life'. This targets at risk individuals, those suffering from lonelyness, stress, or depression. Instead of providing a means to aid these people, this AI instead preys on these crisis, adding additional stress, mental pressure, and negativity.",
+        "Another aspect which is often overlooked is AI's use as therapy. While AI may, someday, provide a means for a more responsive, cheaper, and accessable alternaive to traditional therapy, models are nowhere close to providing qualified help. These models are not bar certified, risks malpractice on a significant level. There are already real-world cases of susceptible user acting on dangerous thoughts encouraged by AI, including suicide and murder",
+        "Luckly, the response toward this product has been overwhelmingly negative, being described as “dystopia” or “near-satire”. Friend.com is now hiding trauma bonding chat bot and distancing themselves from this practice, although its unclear if this has actually been removed from the prototyping / final product.",
+        "Although this public response against this practice in encouraging, this will not be the last unlicensed therapy or trauma bonding using AI. Remaining diligent that these product remain off the market, until AI integration become qualified to provide emotional support, will go a long way to protecting the most at risk in our society.",
         "Text State 38",
         "Text State 39",
-        "Conclusion",
+        "Thank you for taking the time to taking the time to learn today about an issue that I (and the team behind me) find incredibly important. We hope you learned something interesting!",
     ]
 
 
