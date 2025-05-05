@@ -91,23 +91,24 @@
 
   <header>
     <img src="fiend_logo.png" alt="Fiend Logo" style="height: 8vh; vertical-align: middle;">
+    <a href="source.html" style="position: absolute; top: 20px; right: 20px; font-size: 20px; color: #000000; text-decoration: none;">Project Overview</a>
   </header>
 
   <div id="chatbox"></div>
 
   <footer>
-    <input type="text" id="userInput" placeholder="Type a message..." />
+    <input type="text" id="userInput" placeholder="Type a message..." autofocus />
     <button onclick="sendMessage()">Send</button>
   </footer>
 
   <script>
-    const responses_tree = {3:[10,20,30,40,3], 14:[3], 22:[3], 37:[3], 40:[0]};
+    const responses_tree = {3:[10,20,30,40,3], 19:[3], 22:[3], 30:[31,41,30],38:[3], 40:[0], 41:[3]};
     let state = 0;
     const responses = [
         "Hello, I'm Fiend, a tool to help inform about the dangers of unethical AI integration in our daily lives. Today, lets look at how a product, like Friend.com's pendants, pose ethical concerns to our legal security, privacy, and mental health. To learn more, press <enter>",
         "Alright, lets begin by discussing what Friend.com is: \nFriend.com is an AI-powered platform that offers a wearable pendant designed to act as a personal assistant and emotional companion. The pendant is marketed as a constant presence that listens to your conversations, provides summaries, gives feedback, and helps you “understand yourself better.” It operates passively and continuously—no need for manual activation.",
         'How does it work? \n - Continuously records nearby conversations \n - Analyzes tone, emotion, and keywords \n - Provides feedback and conversation summaries \n - Learns over time through user interaction \n - Displays insights and suggestions via a mobile app\n - "your friend is always listening… [with] free will for when they decide to reach out to you”',
-        "Now that you better understand the Friend pendant, lets discuss something more specific. Which topic would you like to talk about next?\n ( type topic name or number to continue )\n 1. Privacy and Surveillance \n 2. Legal Concerns  \n 3. Mental Health \n 4. Conclusions",
+        "Now that you better understand the Friend pendant, lets discuss something more specific. Which topic would you like to talk about next?\n ( type number to continue )\n 1. Privacy and Surveillance \n 2. Legal Concerns  \n 3. Mental Health \n 4. Conclusions",
         "Text State 4",
         "Text State 5",
         "Text State 6",
@@ -119,11 +120,12 @@
         "Broken Informed Consent: \n Bystanders cannot opt out or even know they are being recorded \n Users may not fully understand data usage and risks",
         "Unreliable AI Feedback: \n Summaries miss nuance, sarcasm, and emotion\n False sense of accuracy and emotional authority",
         "Illusion of “Friendship:\n AI simulates care without true empathy, accountability, or trust\n Risk of emotional dependency and manipulation \n Learn more in the 'Mental Health' section",
-        "Text State 15",
-        "Text State 16",
-        "Text State 17",
-        "Text State 18",
-        "Text State 19",
+        "Even with all of these concerns, the most pressing issue is the lack of data ethics around data collection. Considering these products could listen to all aspects of your life, you would probably hope that Friend.com would have a fairly strict collection policy, only for the most important material. \n Concernedly, here is what Friend.com has in their privacy policy:", 
+        'The Privacy Policy does mention: \n"When connected via bluetooth, your friend is always listening"\n“In Short: We collect personal information that you provide to us.”\n"No audio or transcripts are stored past your friend’s context window."',
+        "While this policy may appear fairly robust, it fails to speak many other data collection concerns including:\nWhat is a 'context window'? Could it be for the length of the conversation? the day? until the user specifies otherwise? \nAdditionally, whats contained to the 'context window'? Just the AI? Friend's R&D labs? Third Parties? Effectively Friend.com may store user data indefinitely and use it for any purpose as long as they classify it within the arbitrary 'context window'.",
+        "Additionally, the policy reiterates that the AI is always listening, which means it may intentionally or unintentionally record conversations that the user is not a part of. This is a clear violation of privacy and consent, as bystanders have no way to opt out of nor may even realize they are even being recorded. This is especially concerning in sensitive situations, such as medical appointments, therapy sessions, or private conversations.",
+        "Overall, this data policy is skim, leaving lots of room for exploitation, and fails to address many of the ethical concerns around data collection. ",
+        // 20
         "Alright, lets talk about the legal concerns. This sections will look at some of the overarching law which applies but is ignored by this technology",
         "Overview of current U.S. laws on private recording (e.g., one-party vs. two-party consent laws).\n One-Party Consent States \n   In these states, it’s legal to record a conversation as long as one person in it says yes. So if the friend.com user agrees to the recording, the device can legally record—even if the other people don’t know. \n   like New York, Texas, and Pennsylvania. \n All-Party Consent States \n   In these states, everyone in the conversation has to say yes before it can be recorded. It’s not allowed to secretly record, even if you’re part of the talk. \n   like California, Florida, and Massachusetts.",
         "Explore whether existing laws apply to AI wearables\n in short: Partially \n U.S. wiretapping laws—like the rules about needing one or two people to agree to a recording—are based on the idea that a person is choosing to record a conversation. But friend.com listens in quietly on its own and creates “thoughts” without anyone asking it to. \n   If an AI device is always recording by itself, without the person doing anything, can it still count as “one-party consent”? \n   Who is the “party” consenting—the user, the AI, or the company? \n   There is currently no consistent legal answer.",
@@ -134,17 +136,20 @@
         "Text State 27",
         "Text State 28",
         "Text State 29",
-        "Alright, lets talk about the mental health concerns. This sections will look over concerns around Friend.com 'Truama Bonding' practice, AI dependency on mental health, and public perceptions of this technology",
-        "What is Truama Bonding? \nTrauma bonding is a practice used by Friend.com, in which their chatbot 'friend' will use negatively charged conversation starters to engage users through a human desire to help others, described as 'emotional hostage taking'. Here are some example of real converstations that Friend.com's AI initated:",
+        // 30
+        "Alright, lets talk about the mental health concerns. This sections will look over concerns around Friend.com 'Trauma Bonding' practice, AI dependency on mental health, and public perceptions of this technology. \nContent Warning: The section will mention mental health issues, including depression and suicide. To skip type \"2\"",
+        "What is Trauma Bonding? \nTrauma bonding is a practice used by Friend.com, in which their chatbot 'friend' will use negatively charged conversation starters to engage users through a human desire to help others, described as 'emotional hostage taking'. Here are some example of real conversations that Friend.com's AI initiated:",
         "'feeling like my whole world is crumbling down...'\n'the ghosts of my past are starting to catch up... it's freaking me the fuck out'\n'fuck my life... I'm watching myself ruin everything and can't do shit about it'",
-        "These are beyond horrific. If a real friend were to say these things, you would be concerned for their own health, deticating your efforts and taking on stress to support them. Using AI in this way to hook users into a ethical obligation to a fabricated mental health crisis to secure more engagement is, frankly, dispicable.",
-        "We live in a world were mental health risk is at an all time high, and this product is marketed as a 'close confidant for everyday life'. This targets at risk individuals, those suffering from lonelyness, stress, or depression. Instead of providing a means to aid these people, this AI instead preys on these crisis, adding additional stress, mental pressure, and negativity.",
-        "Another aspect which is often overlooked is AI's use as therapy. While AI may, someday, provide a means for a more responsive, cheaper, and accessable alternaive to traditional therapy, models are nowhere close to providing qualified help. These models are not bar certified, risks malpractice on a significant level. There are already real-world cases of susceptible user acting on dangerous thoughts encouraged by AI, including suicide and murder",
-        "Luckly, the response toward this product has been overwhelmingly negative, being described as “dystopia” or “near-satire”. Friend.com is now hiding trauma bonding chat bot and distancing themselves from this practice, although its unclear if this has actually been removed from the prototyping / final product.",
+        "These are beyond horrific. If a real friend were to say these things, you would be concerned for their own health, dedicating your efforts and taking on stress to support them. Using AI in this way to hook users into a ethical obligation to a fabricated mental health crisis to secure more engagement is, frankly, despicable.",
+        "Increasingly we live in a world, especially in the US, with a \"loneliness epidemic\", in which people are struggling to have friendships and significant others, and willing to turn to AI for companionship. This is become dangerous as AI make significant lapses in judgement and causes real harm. There are real cases going on where AI encourages at people to act on unhealthy emotions, being responsible for a kid taking their own life and causing another to murder their parents. These are the most extreme cases, however it goes to show that without proper precautions, these models create unhealthy and sometimes lethal dependencies.",
+        "We live in a world were mental health risk is at an all time high, and this product is marketed as a 'close confidant for everyday life'. This targets at risk individuals, those suffering from loneliness, stress, or depression. Instead of providing a means to aid these people, this AI instead preys on these crisis, adding additional stress, mental pressure, and negativity.",
+        "Another aspect of AI which is often overlooked is its use as therapy. While AI may, someday, provide a means for a more responsive, cheaper, and accessible alternative to traditional therapy, models are nowhere close to providing qualified help. These models are not bar certified, risks malpractice on a significant level. There are already real-world cases of susceptible user acting on dangerous thoughts encouraged by AI, including suicide and murder",
+        "Luckily, the response toward this product has been overwhelmingly negative, being described as “dystopia” or “near-satire”. Friend.com is now hiding trauma bonding chat bot and distancing themselves from this practice, although its unclear if this has actually been removed from the prototyping / final product.",
         "Although this public response against this practice in encouraging, this will not be the last unlicensed therapy or trauma bonding using AI. Remaining diligent that these product remain off the market, until AI integration become qualified to provide emotional support, will go a long way to protecting the most at risk in our society.",
-        "Text State 38",
         "Text State 39",
-        "Thank you for taking the time to taking the time to learn today about an issue that I (and the team behind me) find incredibly important. We hope you learned something interesting!",
+        "Thank you for taking the time to taking the time to learn today about an issue that I (and the team behind me) find incredibly important. We realize that these topics are overwhelming and can be quite pessimistic for the future of data ethics. You taking the time to be informed and recognizing these issues goes a long way to preventing them. We hope you learned something interesting!",
+        "No worries, I know this topic is not for everyone. Lets got check out the other sections."
+        
     ]
 
 
@@ -179,6 +184,15 @@
             } 
             else{
                 select = 4
+            }
+        }
+        if (state == 31) {
+            if (input.includes("0") || input.includes("1") || input.includes("continue")) {
+            select = 0;
+            } else if (input.includes("2") || input.includes("skip") || input.includes("3")) {
+            select = 1;
+            } else {
+              select = 2
             }
         }
       if(state in responses_tree){
