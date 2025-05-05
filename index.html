@@ -105,7 +105,7 @@
     const responses_tree = {3:[10,20,30,40,3], 19:[3], 22:[3], 30:[31,41,30],38:[3], 40:[0], 41:[3]};
     let state = 0;
     const responses = [
-        "Hello, I'm Fiend, a tool to help inform about the dangers of unethical AI integration in our daily lives. Today, lets look at how a product, like Friend.com's pendants, pose ethical concerns to our legal security, privacy, and mental health. To learn more, press <enter>",
+        "Hello, I'm Fiend, a tool to help inform about the dangers of unethical AI integration in our daily lives. Today, lets look at how a product, like Friend.com's pendants, pose ethical concerns to our legal security, privacy, and mental health. To continue conversation, press <enter>",
         "Alright, lets begin by discussing what Friend.com is: \nFriend.com is an AI-powered platform that offers a wearable pendant designed to act as a personal assistant and emotional companion. The pendant is marketed as a constant presence that listens to your conversations, provides summaries, gives feedback, and helps you “understand yourself better.” It operates passively and continuously—no need for manual activation.",
         'How does it work? \n - Continuously records nearby conversations \n - Analyzes tone, emotion, and keywords \n - Provides feedback and conversation summaries \n - Learns over time through user interaction \n - Displays insights and suggestions via a mobile app\n - "your friend is always listening… [with] free will for when they decide to reach out to you”',
         "Now that you better understand the Friend pendant, lets discuss something more specific. Which topic would you like to talk about next?\n ( type number to continue )\n 1. Privacy and Surveillance \n 2. Legal Concerns  \n 3. Mental Health \n 4. Conclusions",
@@ -186,7 +186,7 @@
                 select = 4
             }
         }
-        if (state == 31) {
+        if (state == 30) {
             if (input.includes("0") || input.includes("1") || input.includes("continue")) {
             select = 0;
             } else if (input.includes("2") || input.includes("skip") || input.includes("3")) {
